@@ -7,7 +7,7 @@ int main()
 {
     char c, polje[3][8] = { {'A','_', '_', '_', '_', '_', '_', 'g'},{'B','_', '_', '_', '_', '_','_','f'},{'C','_', '_', '_', '_','_','_', 'k'} };
     int x1 = 0, y1 = 0, x2 = 1, y2 = 0, x3 = 2, y3 = 0, z;
-    cout << "Dobrodošli u utrke konja, odaberite konja na kojega se kladite: A)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    B)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    C)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    ";
+    cout << "Dobrodosli u utrke konja, odaberite konja na kojega se kladite: A)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    B)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    C)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    ";
     for (int i = 1; i > 0; i++)
     {
         cin >> c;
@@ -21,7 +21,7 @@ int main()
             cout << "\nUnesite valjanog konja: ";
     }
     cout << "\n";
-    cout << "Napiši koliko ulažeš: ";
+    cout << "Napisi koliko ulazes: ";
     cin >> z;
     while ((polje[0][7] == 'g') && (polje[1][7] == 'f') && (polje[2][7] == 'k'))
     {
@@ -35,7 +35,7 @@ int main()
             polje[x1][y1 + 1] = 'A';
             y1++;
         }
-        system("clear");
+        system("cls");
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 8; j++)
@@ -51,7 +51,7 @@ int main()
             polje[x2][y2 + 1] = 'B';
             y2++;
         }
-        system("clear");
+        system("cls");
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 8; j++)
@@ -67,7 +67,7 @@ int main()
             polje[x3][y3 + 1] = 'C';
             y3++;
         }
-        system("clear");
+        system("cls");
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 8; j++)
@@ -80,40 +80,40 @@ int main()
     if (polje[0][7] == 'A' && c == 'A')
     {
         z = z * 100000;
-        cout << "Èestitamo! Vaš konj je pobijedio.";
+        cout << "Cestitamo! Vas konj je pobijedio.";
         cout << "\n";
-        cout << "Vaš dobitak je: " << z;
+        cout << "Vas dobitak je: " << z;
         goto kraj;
     }
     if (polje[0][7] == 'A' && c != 'A')
     {
-        cout << "Izgubili ste, više sreæe drugi put";
+        cout << "Izgubili ste, vise srece drugi put";
         goto kraj;
     }
     if (polje[1][7] == 'B' && c == 'B')
     {
         z = z * 100000;
-        cout << "Èestitamo! Vaš konj je pobijedio.";
+        cout << "cestitamo! Vas konj je pobijedio.";
         cout << "\n";
-        cout << "Vaš dobitak je: " << z;
+        cout << "Vas dobitak je: " << z;
         goto kraj;
     }
     if (polje[1][7] == 'B' && c != 'B')
     {
-        cout << "Izgubili ste, više sreæe drugi put";
+        cout << "Izgubili ste, vise srece drugi put";
         goto kraj;
     }
     if (polje[2][7] == 'C' && c == 'C')
     {
         z = z * 100000;
-        cout << "Èestitamo! Vaš konj je pobijedio.";
+        cout << "Cestitamo! Vas konj je pobijedio.";
         cout << "\n";
-        cout << "Vaš dobitak je: " << z;
+        cout << "Vas dobitak je: " << z;
         goto kraj;
     }
     if (polje[2][7] == 'C' && c != 'C')
     {
-        cout << "Izgubili ste, više sreæe drugi put";
+        cout << "Izgubili ste, viï¿½e srece drugi put";
         goto kraj;
     }
 

@@ -2,13 +2,20 @@
 #include <cstdlib>
 #include <ctime>
 #include <windows.h>
+#include <fstream>
 using namespace std;
 int main()
 {
+    fstream datoteka;
+        datoteka.open("Povijest.txt", ios::app);
     char c, polje[3][8] = { {'A','_', '_', '_', '_', '_', '_', 'g'},{'B','_', '_', '_', '_', '_','_','f'},{'C','_', '_', '_', '_','_','_', 'k'} };
-    int x1 = 0, y1 = 0, x2 = 1, y2 = 0, x3 = 2, y3 = 0, z;
-    cout << "Dobrodosli u utrke konja, odaberite konja na kojega se kladite: A)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    B)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    C)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    ";
-    for (int i = 1; i > 0; i++)
+    int x1 = 0, y1 = 0, x2 = 1, y2 = 0, x3 = 2, y3 = 0, z, g;
+    cout << "Dobrodosli u utrke konja, unesite svoje ime: ";
+        cin >> g;
+        cout << "Dobrodošli " << g;
+    cout <<"odaberite konja na kojega se kladite : \n                                                    A)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                                                    B)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                                                    C)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    ";
+    cin.ignore();
+    for (int i = 1; i < 2; i++)
     {
         cin >> c;
         if (c == 'A')
@@ -93,7 +100,7 @@ int main()
     if (polje[1][7] == 'B' && c == 'B')
     {
         z = z * 100000;
-        cout << "cestitamo! Vas konj je pobijedio.";
+        cout << "Cestitamo! Vas konj je pobijedio.";
         cout << "\n";
         cout << "Vas dobitak je: " << z;
         goto kraj;

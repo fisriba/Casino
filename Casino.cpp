@@ -9,7 +9,8 @@ int main()
     fstream datoteka;
     datoteka.open("Povijest.txt", ios::app);
 
-    char c, g;
+    char c;
+    string g;
     int z, t;
     char polje[3][8] = { {'A','_', '_', '_', '_', '_', '_', 'g'},
                          {'B','_', '_', '_', '_', '_','_','f'},

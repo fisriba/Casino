@@ -96,7 +96,7 @@ int main()
     cout << "\n";
     if (polje[0][7] == 'A' && c == 'A')
     {
-        t = z * 2;
+        t = z * 3;
         cout << "Cestitamo! Vas konj je pobijedio.\n";
         cout << "Vas dobitak je: " << t << "\n";
         datoteka << g << " je uložio " << z << " i osvojio " << t << " s konjem A.\n";
